@@ -1,0 +1,33 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .container h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .container input[type="number"],
+  .container select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .container input[type="number"] {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  
+  .container select {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  

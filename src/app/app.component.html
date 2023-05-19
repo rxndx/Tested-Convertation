@@ -1,0 +1,15 @@
+<h1>Конвертер валют</h1>
+
+<div class="container">
+  <h2>Курс валют USD, EUR к UAH</h2>
+  <div class="currency">
+    <label>1 гривна =</label>
+    <span>{{ (1 / dollarRate).toFixed(3) }} доллара</span>
+  </div>
+  <div class="currency">
+    <label>1 гривна =</label>
+    <span>{{ (1 / euroRate).toFixed(3) }} евро</span>
+  </div>
+</div>
+
+<app-currency-converter></app-currency-converter>

@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Первая валюта</h2>
+  <input type="number" [(ngModel)]="amount" (ngModelChange)="convertCurrencies()">
+  <select [(ngModel)]="baseCurrency" (ngModelChange)="getExchangeRates()">
+    <option value="UAH">UAH</option>
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+  </select>
+
+  <h2>Вторая валюта</h2>
+  <input type="number" [value]="convertedAmount">
+  <select [(ngModel)]="targetCurrency" (ngModelChange)="convertCurrencies()">
+    <option value="UAH">UAH</option>
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+  </select>
+</div>
