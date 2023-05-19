@@ -30,6 +30,11 @@ export class CurrencyConverterComponent {
 
     this.convertedAmount = (this.amount / baseRate) * targetRate;
   }
+
+  convertBackCurrencies() {
+    const baseRate = this.exchangeRates[this.baseCurrency];
+    const targetRate = this.exchangeRates[this.targetCurrency];
+
+    this.amount = (this.convertedAmount / targetRate) * baseRate;
+  }
 }
-
-

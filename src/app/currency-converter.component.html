@@ -8,7 +8,7 @@
   </select>
 
   <h2>Вторая валюта</h2>
-  <input type="number" [value]="convertedAmount">
+  <input type="number" [(ngModel)]="convertedAmount" (ngModelChange)="convertBackCurrencies()">
   <select [(ngModel)]="targetCurrency" (ngModelChange)="convertCurrencies()">
     <option value="UAH">UAH</option>
     <option value="USD">USD</option>
